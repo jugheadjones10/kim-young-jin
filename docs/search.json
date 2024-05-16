@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 16, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 13, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kim Young Jin",
+    "section": "",
+    "text": "Hi! I’m currently studying Computer Science at the National University of Singapore. In a past life I was obsessed with creating software products. Now I am working to become a computational neuroscientist. Although I love creating products and tinkering with code, I am at the core a deeply curious person - and one of the most curiosity-inducing mysteries of the world is that of intelligence. What is it, and how do we create it?\nMy thesis is that artificial intelligence needs to take inspiration from the only proof-of-existence we have, the brain, if we want a shot at AGI. Many say neuroscience is pre-paradigmic; on an initial survey of the field, it seems like there is a greater focus on finding interesting correlations rather than testing overarching theoretical models. Can the creation of artificial systems emulating discrete aspects of intelligence bridge that gap between data and conceptual clarity?\nI hope to find out.\n\nA TLDR of what I’ve been doing with life:\n\nIn my K-12 years I thought I wanted to be a writer so I got published in some obscure literary journals.\nStarted programming in high school so that I could make goofy websites.\nStudied CS at the National University of Singapore. Built huge Android apps to validate business ideas.\nServed in the Korean army for 2 years. In my free time I built random stuff using my iPad as my IDE (laptops weren’t allowed).\nCold emailed Zeet CEO for an internship because they were solving a problem I was facing (cloud deployment). Added some features, fixed some bugs. Flew to SF to meet the team.\nCold emailed Locofy CEO for an internship because they were solving a problem I was facing (frontend codegen from Figma). I believed the product would be re-invent the way frontends are built.\nTook a Leave of Absence to go all-in on the biggest product launch in Locofy’s history, where we automated away a huge portion of the Figma-to-frontend workflow for engineers.\nCame back to school, became fascinated by the brain after reading several books.\nCurrently trying to do some research at the intersection of AI and neuroscience by solving the Monkey and Banana problem with neuro-inspired methods."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  }
+]
