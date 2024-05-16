@@ -1,0 +1,18 @@
+project:
+  type: website
+
+website:
+  title: "Kim Young Jin"
+  navbar:
+    left:
+      - writing.qmd
+      - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/jugheadjones10
+      - icon: twitter
+        href: https://twitter.com/yjmemos
+format:
+  html:
+    theme: litera
+    css: styles.css
