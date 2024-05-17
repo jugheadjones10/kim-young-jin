@@ -13,5 +13,7 @@ about:
     - icon: github
       text: Github
       href: https://github.com/jugheadjones10
-
+    - icon: email
+      text: Email
+      href: mailto:kimyoungjin1001@gmail.com
 ---
