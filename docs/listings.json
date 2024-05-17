@@ -2,8 +2,13 @@
   {
     "listing": "/writing.html",
     "items": [
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/ambitious-and-content.html"
+    ]
+  },
+  {
+    "listing": "/learning.html",
+    "items": [
+      "/learning/reinforcement-learning/sutton-and-barto/chapter-2.html"
     ]
   }
 ]

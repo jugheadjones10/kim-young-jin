@@ -1,6 +1,3 @@
----
----
-
 Hi! I'm currently studying Computer Science at the National University of Singapore. In a past life I was obsessed with creating software products (still am, to an extent). Now I am working to become a computational neuroscientist. I am at the core a deeply curious person - and one of the most curiosity-inducing mysteries of the world is that of intelligence. What is it, and how do we create it?
 
 My thesis is that artificial intelligence needs to take inspiration from the only proof-of-existence we have, the brain, if we want a shot at AGI. Many say neuroscience is [pre-paradigmic](https://www.theintrinsicperspective.com/p/neuroscience-is-pre-paradigmatic); on an initial survey of the field, it seems like there is a greater focus on finding interesting correlations rather than testing overarching theoretical models. Can the creation of artificial systems emulating discrete aspects of intelligence bridge that gap between data and conceptual clarity? 

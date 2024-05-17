@@ -4,7 +4,7 @@
     "href": "writing.html",
     "title": "Writing",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMay 16, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMay 13, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Ambitious but at peace\n\n\n\n\n\n\n\n\nMay 17, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -33,5 +33,54 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "learning.html",
+    "href": "learning.html",
+    "title": "Learning",
+    "section": "",
+    "text": "Sutton’s Reinforcement Learning Chapter 2: Multi-armed Bandits\n\n\nImplementations of algorithms and code solutions for some exercises\n\n\n\n\n\nMay 17, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "learning/test/index.html",
+    "href": "learning/test/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "learning/other/index.html",
+    "href": "learning/other/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "learning/reinforcement-learning/index.html",
+    "href": "learning/reinforcement-learning/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "learning/other/hey.html",
+    "href": "learning/other/hey.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "learning/reinforcement-learning/sutton-and-barto/chapter-2.html",
+    "href": "learning/reinforcement-learning/sutton-and-barto/chapter-2.html",
+    "title": "Sutton’s Reinforcement Learning Chapter 2: Multi-armed Bandits",
+    "section": "",
+    "text": "import numpy as np  # noqa\nimport matplotlib.pyplot as plt  # noqa\n\n\nComparison of 10-armed bandit problem between ε-greedy and greedy methods\nActions estimates are calculated using the sample-average method.\n\ndef sample_action(true_value):\n    return np.random.normal(true_value, 1)\n\n\ndef executor(runs=2000, time_steps=1000, epsilon=0.1):\n    rewards_agg = []\n    for i in range(runs):\n        rewards_history = []\n\n        # Define true action values\n        qstar = np.random.normal(0, 1, size=10)\n\n        # Action value estimates are all initially 0\n        qa = np.zeros(10)\n        action_counts = np.zeros(10)\n\n        for n in range(time_steps):\n            if np.random.rand() &gt; epsilon:\n                # Choose action greedily\n                action = np.argmax(qa)\n            else:\n                action = np.random.choice(np.arange(10))\n\n            # Sample action_value\n            reward = sample_action(qstar[action])\n            rewards_history.append(reward)\n\n            # Update action count\n            action_counts[action] += 1\n            # Update action value estimate\n            qa[action] = qa[action] + 1 / action_counts[action] * (reward - qa[action])\n\n        rewards_agg.append(rewards_history)\n\n    stacked = np.vstack(rewards_agg)\n    averaged_array = np.mean(stacked, axis=0)\n    return averaged_array\n\n\n# Plot different runs of the experiment in different colors on the same plot\nresults = executor(epsilon=0.1)\nplt.plot(results, color=\"blue\")\n\nresults = executor(epsilon=0.01)\nplt.plot(results, color=\"red\")\n\nresults = executor(epsilon=0)\nplt.plot(results, color=\"green\")\n\n# Increase width of plot\nplt.gcf().set_size_inches(10, 5)\n\n\n\n\n\n\n\n\n\n\nExercise 2.5\nComparison of non-stationary 10-armed bandit problem between sample-average and constant step-size parameter methods\n\ndef sample_action(true_value):\n    return np.random.normal(true_value, 1)\n\n\ndef update_true_action_values(true_values):\n    return [value + np.random.normal(0, 0.01) for value in true_values]\n\n\n# Define number of runs\ndef executor(runs=2000, time_steps=1000, epsilon=0.1, alpha=0.1, constant_step=False):\n    rewards_agg = []\n    for i in range(runs):\n        rewards_history = []\n\n        # Define true action values\n        qstar = np.random.normal(0, 1, size=10)\n\n        # Action value estimates are all initially 0\n        qa = np.zeros(10)\n        action_counts = np.zeros(10)\n\n        for n in range(1, time_steps + 1):\n            if np.random.rand() &gt; epsilon:\n                # Choose action greedily\n                action = np.argmax(qa)\n            else:\n                action = np.random.choice(np.arange(10))\n\n            # Sample action_value\n            reward = sample_action(qstar[action])\n            rewards_history.append(reward)\n\n            # Update action count\n            action_counts[action] += 1\n\n            # Update action value estimate\n            if constant_step:\n                qa[action] = qa[action] + (reward - qa[action]) * alpha\n            else:\n                qa[action] = qa[action] + (reward - qa[action]) * (\n                    1 / action_counts[action]\n                )\n\n            # Update true action values (to simulate non-stationarity)\n            qstar = update_true_action_values(qstar)\n\n        rewards_agg.append(rewards_history)\n\n    stacked = np.vstack(rewards_agg)\n    averaged_array = np.mean(stacked, axis=0)\n    return averaged_array\n\n\nresults = executor(time_steps=10000, epsilon=0.1, constant_step=False)\nplt.plot(results, color=\"blue\")\n\nresults = executor(time_steps=10000, epsilon=0.1, constant_step=True)\nplt.plot(results, color=\"red\")\n\nplt.gcf().set_size_inches(10, 5)\n\n\n\n\n\n\n\n\n\n\nExercise 2.11\n\n# Need to run for different epsilon values\n\nresults = []\nfor i in range(-5, 2):\n    epsilon = 2**i\n\n    results = executor(\n        runs=1000, time_steps=200000, epsilon=epsilon, constant_step=True\n    )\n\n    # Average the last 100,000 rewards\n    average_reward = np.mean(results[-100000:])\n    results.append(average_reward)\n\n# X-axis should be the epsilons\nplt.plot(range(-5, 2), results, color=\"blue\")\n\nplt.gcf().set_size_inches(10, 5)\n\nAttributeError: 'numpy.ndarray' object has no attribute 'append'"
+  },
+  {
+    "objectID": "posts/ambitious-and-content.html",
+    "href": "posts/ambitious-and-content.html",
+    "title": "Ambitious but at peace",
+    "section": "",
+    "text": "For most of my life I’ve felt a deep discontent myself.\nWe hear a lot of advice to “love yourself”, have a “kind inner voice”, and so on. I’ve always felt these were coping mechanisms, anesthesia to dull the pain of reality. Better to embrace the pain, I thought. Invigorate yourself with the fury of self-hatred and envy. Only the unambitious are content with the warm fuzziness of satisfaction. It’s like what they always say: the most successful people contain within them a contradiction - near delusional levels of self-belief fueld by an intense anxiety around never being good enough.\nI’m still in my early twenties, but my stance has changed somewhat. Ambition doesn’t mean you need to constantly hate where you are at. Ambition is about the magnitude of your end goals, not about your mental state on the way there. If you could take a different road to the same destination, one that preserves your peace of mind, why wouldn’t you?\nAnd that other, more peaceful road, might get you to your goal faster. With peace of mind, you can keep going, day in and day out. By prioritising peace of mind, you are making the choice to run a marathon instead of a sprint. Who will be fresh-headed and grinding, ten years from now? The ambitious one who looks at every failure of his as the biggest catastrophes he has ever faced? Or the ambitious one who controls what is within his control, lets go of what is not, and is at peace with himself?\nReal strength comes from knowing that there is absolutely nothing that can happen to you that will stop you from continuing forward."
   }
 ]

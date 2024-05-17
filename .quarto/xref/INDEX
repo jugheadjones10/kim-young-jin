@@ -13,5 +13,26 @@
   },
   "writing.qmd": {
     "writing.html": "5d835284"
+  },
+  "learning.qmd": {
+    "learning.html": "b317eaf1"
+  },
+  "learning/test/index.qmd": {
+    "index.html": "12312666"
+  },
+  "learning/other/index.qmd": {
+    "index.html": "6cf8b615"
+  },
+  "learning/reinforcement-learning/index.qmd": {
+    "index.html": "dbc78b48"
+  },
+  "learning/other/hey.qmd": {
+    "hey.html": "9999dbb0"
+  },
+  "learning/reinforcement-learning/sutton-and-barto/chapter-2.ipynb": {
+    "chapter-2.html": "49afb0b2"
+  },
+  "posts/ambitious-and-content.qmd": {
+    "ambitious-and-content.html": "a703407f"
   }
 }

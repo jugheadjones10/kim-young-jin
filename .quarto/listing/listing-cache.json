@@ -2,6 +2,9 @@
   "listingMap": {
     "writing.qmd": [
       "posts"
+    ],
+    "learning.qmd": [
+      "learning"
     ]
   }
 }

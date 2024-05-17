@@ -1,7 +1,7 @@
 ---
-title: "Writing"
+title: "Learning"
 listing:
-  contents: posts
+  contents: learning
   sort: "date desc"
   type: default
   categories: true
