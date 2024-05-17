@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Kim Young Jin"
+  google-analytics: "G-PJQ5ZH4KTP"
   navbar:
     left:
       - writing.qmd
