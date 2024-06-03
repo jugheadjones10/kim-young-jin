@@ -1,0 +1,17 @@
+---
+title: "Arguments for and against God"
+date: "2024-05-24"
+---
+
+A list of arguments and counter-arguments for the existence of God. For personal reference.
+
+Much of the material for this first draft comes from Bertrand Russell's ["Why I Am Not a Christian"](https://users.drew.edu/~jlenz/whynot.html); what follows is a rough summary of his points.
+
+### The First Cause Argument
+
+goes like this: everything has a cause. So there must have been a first cause that existed before any other cause. And that first cause, existing for eternity into the past and future, is God.
+This is one of those arguments that sounds plausible at first, but on closer inspection there is a logical error. If the premise is that everything has a cause, then God shuold have a cause too.
+If then one argues that no, there exists some things which do not have a cause, one of which is God, we can just as easily ask - why cannot the Universe be without cause? Either way, the
+existence of a God is not necessitated.
+
+

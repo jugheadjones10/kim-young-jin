@@ -34,5 +34,38 @@
   },
   "posts/ambitious-and-content.qmd": {
     "ambitious-and-content.html": "a703407f"
+  },
+  "posts/comparison.qmd": {
+    "comparison.html": "4cc0b3d2"
+  },
+  "posts/what-to-do-about-the-future.qmd": {
+    "what-to-do-about-the-future.html": "6b37cbca"
+  },
+  "posts/how-did-intelligence-evolve.qmd": {
+    "how-did-intelligence-evolve.html": "c5a9b07e"
+  },
+  "posts/existence-of-god.qmd": {
+    "existence-of-god.html": "476cd824"
+  },
+  "posts/trying-to-get-good-at-math-and-science.qmd": {
+    "trying-to-get-good-at-math-and-science.html": "0f2c05e1"
+  },
+  "chapter-2.ipynb": {
+    "chapter-2.html": "6bfb7f55"
+  },
+  "drafts/chapter-2.ipynb": {
+    "chapter-2.html": "5190a3de"
+  },
+  "posts/mere-christianity.qmd": {
+    "mere-christianity.html": "e1506ae3"
+  },
+  "drafts/chapter-4.ipynb": {
+    "chapter-4.html": "8a4421d2"
+  },
+  "drafts/test_2.ipynb": {
+    "test_2.html": "8fb4a0bf"
+  },
+  "drafts/test.ipynb": {
+    "test.html": "7e5d4e9c"
   }
 }
