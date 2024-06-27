@@ -1,0 +1,45 @@
+---
+title: Notes from "The Work of His Hands"
+date: "2024-06-03"
+---
+
+"The Work of His Hands" is a book by Sy Garte, PhD, a biochemist atheist turned devout Christian. Sy approaches the question of God's existence from a practicing scientist's point of view. Here are some interesting points he makes on why science is compatible with Christianity.
+
+### The Quantum "Observer Effect"
+
+In Quantum Theory, we know that some things exist in "multiple states" until some kind of observation happens. This is the classical Schroedinger's cat experiment, where the cat is both alive and dead until the box is opened and the cat observed. I had always assumed that this was due to the *act* of observing - observing something requires exerting some physical effect on it, for example by firing photons at it. Apparently, that's not true. It is literally the fact that a *consciousness* observes something that changes its outcome.
+
+This is pretty mind-blowing. What kind of mathematics must be behind this? We don't even understand what consciousness is. How did physicists define an "observer"?
+
+Anyway, Sy points to this and phenomena such as Quantum Entanglement as examples of how reality is irrational. I'm not sure if we can exactly call it "irrational" per se - just unexpected. Science is about disovering new laws behind how the world works. Of course we will uncover weird things. That's the point!
+
+But the point on consciousness warrants further investigation. Did there need to be an initial "observer" at the beginning of time for reality to exist?
+
+### The Three Origins
+
+There are three origins that science does not have answers to. The origin of the universe, the origin of life, and the origin of humans. 
+
+From the discovery that the Universe is constantly expanding, we arrived at the conclusion that all matter must have been concentrated at a single point from which the Big Bang happened. To a layman, the Big Bang might give off a reassuring veneer of good science and rigorous physics, but really the simplicity of the phrase betrays how little we do know about it. It's as if a physicist, flabbergasted by the idea of a tremendous explosion of matter and energy just happening out of nowhere, went: "Bollocks! I'll just call it a Big Bang because that's all I know about it. That it was Big and that there was a Bang."
+
+The origin of life is even more interesting. Evolution only makes sense in the context of cells that can accurately *replicate* themselves. Only then can natural selection work its wonders. But the mechanism behind accurate replication - the tremendously complex process of DNA replication - could not itself have evolved, since it is required for evolution. Same goes for DNA transcription, which is required for evolution since it translates the genotype into phenotypes which can be selected for by the environment.
+
+There are hypotheses that something like "chemical evolution" happened, where just the right chemicals were at just the right place for the formation of the first cell, or LUCA (Last Universal Common Ancestor). But they remain as hypotheses, and there are some who say it is impossible for such a spontaneous formation to happen.
+
+Finally comes the origin of humans. Humans possess a staggeringly sophisticated consciousness, one capable of perceiving the tiniest tinges of emotion. Evolution seems to have *overshot* for us humans - we are on a different plane of existence compared to even our closest evolutionary cousins. We do not know how humans evolved to be this way. We do not know how we developed such powerful brains and complex emotions. What kind of selective pressure could have caused caused humans to evolve such traits? We do not know.
+
+### Intelligent Design?
+
+There are arguments that point to the natural laws, and say: "It is remarkable that these laws are so consistent and logical across all of reality. Why should they be? How could these laws have resulted in humans, if the laws were just 'arbitrary', and not designed by a divine intelligence?"
+
+I'm not sure how much philosophical rigor is in this sentiment. Yes, we can look at reality and wonder at its beauty, but that in itself is just a feeling of awe. Why couldn't it be that reality just really is the way it is? Why does "orderliness" necessarily have to be designed by an intelligence?
+
+For me, a more convincing line of thought starts by acknowledging that all our standards are set by what we observe in the world around us. We think the natural laws are somehow implausibly logical and consistent because we have seen firsthand how things left alone can decay and go to nothingness. Using the only frame of reference we have, our conscious experience, we see that most things in the world tend towards entropy and chaos. Unless, of course, a human - an intelligent designer - intervenes. And so we look at the inventions of our species and intuitively grasp that they came into reality because of us. It becomes hard to look at our Biology and not draw from that same intuition - that there has to be an intelligent designer behind that as well.
+
+Can complexity and order spontaneously arise from chaos? Can *intelligence* arise spontaneously without a higher intelligence designing it? 
+
+Instead of "Quis custodiet ipsos custodes?" (who will watch the watchmen), we can ask "Quis fabricat horologium fabricatoris". *Who maketh the watchmaker?*
+
+
+
+
+

@@ -73,5 +73,14 @@
   },
   "drafts/chapter-5.ipynb": {
     "chapter-5.html": "64878a23"
+  },
+  "posts/sy-garte.qmd": {
+    "sy-garte.html": "a081bbc5"
+  },
+  "learning/exploding-gradients.ipynb": {
+    "exploding-gradients.html": "d2f4890f"
+  },
+  "learning/nielson-deep-learning/mnist.ipynb": {
+    "mnist.html": "7be72361"
   }
 }

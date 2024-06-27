@@ -2,6 +2,7 @@
   {
     "listing": "/writing.html",
     "items": [
+      "/posts/sy-garte.html",
       "/posts/mere-christianity.html",
       "/posts/existence-of-god.html",
       "/posts/comparison.html",
@@ -14,7 +15,8 @@
   {
     "listing": "/learning.html",
     "items": [
-      "/learning/reinforcement-learning/sutton-and-barto/chapter-2.html"
+      "/learning/nielson-deep-learning/mnist.html",
+      "/learning/exploding-gradients.html"
     ]
   }
 ]
