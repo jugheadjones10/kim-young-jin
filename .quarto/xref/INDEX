@@ -82,5 +82,20 @@
   },
   "learning/nielson-deep-learning/mnist.ipynb": {
     "mnist.html": "7be72361"
+  },
+  "drafts/existence-of-god.qmd": {
+    "existence-of-god.html": "3d821d08"
+  },
+  "posts/ai-log.qmd": {
+    "ai-log.html": "60851814"
+  },
+  "learning/nielson-deep-learning/chapter-3.ipynb": {
+    "chapter-3.html": "3b52a38a"
+  },
+  "learning/nielson-deep-learning/chapter-5.ipynb": {
+    "chapter-5.html": "e8e91105"
+  },
+  "ai-log.qmd": {
+    "ai-log.html": "b42b9c8d"
   }
 }

@@ -4,10 +4,7 @@
     "items": [
       "/posts/sy-garte.html",
       "/posts/mere-christianity.html",
-      "/posts/existence-of-god.html",
-      "/posts/comparison.html",
       "/posts/what-to-do-about-the-future.html",
-      "/posts/how-did-intelligence-evolve.html",
       "/posts/trying-to-get-good-at-math-and-science.html",
       "/posts/ambitious-and-content.html"
     ]
@@ -15,6 +12,8 @@
   {
     "listing": "/learning.html",
     "items": [
+      "/learning/nielson-deep-learning/chapter-5.html",
+      "/learning/nielson-deep-learning/chapter-3.html",
       "/learning/nielson-deep-learning/mnist.html",
       "/learning/exploding-gradients.html"
     ]
