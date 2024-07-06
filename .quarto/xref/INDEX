@@ -97,5 +97,17 @@
   },
   "ai-log.qmd": {
     "ai-log.html": "b42b9c8d"
+  },
+  "posts/neuro-ai-research.qmd": {
+    "neuro-ai-research.html": "8c029c71"
+  },
+  "drafts/comparison.qmd": {
+    "comparison.html": "6e6c25a8"
+  },
+  "drafts/ai-log.qmd": {
+    "ai-log.html": "31341318"
+  },
+  "drafts/how-did-intelligence-evolve.qmd": {
+    "how-did-intelligence-evolve.html": "b04e1672"
   }
 }

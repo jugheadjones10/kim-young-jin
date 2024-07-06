@@ -3,3 +3,7 @@ title: "AI log"
 date: "2024-07-01"
 ---
 
+Tue, 2 July 2024
+
+Realised the importance of scaling for data. Let's try some experiments.
+

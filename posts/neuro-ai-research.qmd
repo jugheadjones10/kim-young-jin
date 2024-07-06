@@ -1,0 +1,34 @@
+---
+title: Neuroscience and AI
+date: "2024-07-05"
+---
+
+The end goal is to understand and replicate intelligence. Is the path to that goal AI or neuroscience? Is there any value in trying to marry the two fields together?
+
+The impression I get from my extremely limited survey of neuroscience is that most of it is about identifying patterns from data. It is about taking an extremely complicated phenomenon, extracting as much data as possible through what limited means we have, and applying a whole gamut of data analysis techniques to get at some sort of meaning in all the noise.
+
+I think the field has answered some interesting questions. We have some rough explanations for *how* the brain accomplishes some things. For example, place cells in the Hippocampus help us in spatial navigation.
+
+But there are questions we've answered which I am struggling to see the use of. There is a lot of modelling being done, and especially with the rise of deep neural nets, there are now a whole class of papers comparing the dynamics of things like RNNs with the brain. My question is: so what if we can model brain activity? Let's assume we've built a machine that can precisely predict most patterns of brain activity. Would that give us insight into how intelligence works?
+
+It's true that one of our goals is to *replicate* intelligence. But *how* we replicate it is the really important question. The kind of replication I envision is similar to how a computer science student well-versed in the concepts of computer architecture whould build an OS from scratch. He knows the different features he needs to implement. He knows how to implement those features because he understands the exact requirements of the features, and how he can wield the medium of software to fulfill those requirements.
+
+Replication is definitely *not* taking all the inputs and outputs to a black box, training another black box on those same inputs and outputs, and then declaring that we have understood the original black box.
+
+Applying the OS analogy to the brain, we would need to understand exactly the components of intelligence, be able to define the precise requirements of each component, and finally be able to use a medium to implement those requirements.
+
+A counter-argument to this is that not all systems can be built like this. Some systems, like the human body, start from a single cell but grow exponentially in complexity. Instead of trying to re-build the end product from scratch, a more feasible strategy would be to discern the rules governing the *growth* of the system from simple to complex. In the context of intelligence research, that would mean investigating questions on *learning*. Given initial system A, learning rules B, and experiences C, can we end up with the human brain?
+
+Which is why reinforcement learning seems promising for many people. It helps to isolate and investigate precisely that problem of learning from experience. And it addresses learning in the context of some environment, or the world, and not some curated corpus of data.
+
+Can neuroscience inform RL research? I guess neuroscience can help us define the "initial system" A. What are the rules that are encoded in the brain by default through the genetic code? There has been talk of intuitive physics and psychology "engines" existing as inductive biases in the brain.
+
+Neuroscience could also inform how experiences affect the initial system A, allowing us to uncover the learning rules B. For example, human babies are initially unable to walk, unable understand language, and are unable to accomplish meaningful goals in the world. But give them some time, and they learn how to augment themselves using tools, how to problem solve, and how to navigate the social hierarchy. Can neuroscience help us to disentangle all these different forms of learning and isolate, as finely as possible, the mechanisms behind how the brain acquires new abilities? 
+
+But here is another challenge. Even if we have a complete before-and-after model of the brain after it undergoes some experience, how do we figure out what it *means*? Even for neural nets, whose learning rules we know, it is as of now impossible to understand the *meaning* of specific weight updates.
+
+Understanding the meaning of something means knowing exactly how it contributes towards the goal at hand. If your program, during its execution, updates a register in memory, we know that it does so to retrieve it again later for some future operation. We know *why* it is being done. 
+
+For neural nets or the brain, making sense of a change in the system may require understanding how exactly the new piece of data acquired from the environment changes how the system itself works. At least for neural nets, we have a high-level understanding that each tiny weight update contributes towards minimizing the loss. Not so for the brain.
+
+Is it possible to discover the learning rule by observing weight updates? If it's not possible for neural nets, then how could it be possible for brains?
