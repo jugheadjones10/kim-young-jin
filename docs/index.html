@@ -30,10 +30,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -66,6 +67,63 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-intelligence .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-intelligence'] = new List('listing-intelligence', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-life .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-life'] = new List('listing-life', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-PJQ5ZH4KTP"></script>
 
 <script type="text/javascript">
@@ -76,11 +134,40 @@ gtag('js', new Date());
 gtag('config', 'G-PJQ5ZH4KTP', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,16 +185,8 @@ gtag('config', 'G-PJQ5ZH4KTP', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./writing.html"> 
-<span class="menu-text">Writing</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./learning.html"> 
-<span class="menu-text">Learning</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="https://drive.google.com/file/d/1iKxuw4TnR15k_sLqi5q4o5845Gvz83Ft/view?usp=sharing"> 
+<span class="menu-text">CV</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -129,34 +208,191 @@ gtag('config', 'G-PJQ5ZH4KTP', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 
 
 
-<p>Hi! I’m currently studying Computer Science at the National University of Singapore. In a past life I was obsessed with creating software products (still am, to an extent). Now I am working to become a computational neuroscientist. I am at the core a deeply curious person - and one of the most curiosity-inducing mysteries of the world is that of intelligence. What is it, and how do we create it?</p>
-<p>My thesis is that artificial intelligence needs to take inspiration from the only proof-of-existence we have, the brain, if we want a shot at AGI. Many say neuroscience is <a href="https://www.theintrinsicperspective.com/p/neuroscience-is-pre-paradigmatic">pre-paradigmic</a>; on an initial survey of the field, it seems like there is a greater focus on finding interesting correlations rather than testing overarching theoretical models. Can the creation of artificial systems emulating discrete aspects of intelligence bridge that gap between data and conceptual clarity?</p>
-<p>I hope to find out.</p>
-<p><img alt="pretty" src="brain.webp" width="400" style="margin-left: auto; margin-right: auto; display: block"></p>
-<p>A TLDR of what I’ve been doing with life:</p>
+<div class="quarto-about-trestles content column-page">
+  <div class="about-entity">
+    <img src="profile.jpg" class="about-image
+  rounded " style="width: 20em;">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Kim Young Jin</h1>
+</div>
+<div class="quarto-title-meta column-page">
+  </div>
+</header>
+    <div class="about-links">
+  <a href="https://x.com/vonnynonnyj" class="about-link" rel="" target="">
+    <i class="bi bi-twitter-x"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://www.linkedin.com/in/kim-young-jin-951a55134/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://github.com/jugheadjones10" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="mailto:kimyoungjin1001@gmail.com" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text"></span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><div id="hero-heading">
+<p>Year 4 CS undergraduate at the National University of Singapore.</p>
+<p>Currently exploring Deep Reinforcement Learning, Open-Endedness, Unsupervised Environment Design, and Meta-learning.</p>
+<p>Some questions on my mind:</p>
 <ul>
-<li>In my K-12 years I thought I wanted to be a writer so I got published in some <a href="https://bluemarblereview.com/snowless-december/">obscure</a> <a href="https://medium.com/the-waif-project/harmless-exfoliation-1d4302ff961c">literary</a> journals.</li>
-<li>Started programming in high school so that I could make goofy websites.</li>
-<li>Studied CS at the National University of Singapore. Built huge <a href="https://www.veed.io/view/37e2520f-bf82-402d-b454-880e27d03a44?panel=showcase">Android</a> <a href="https://www.veed.io/view/18cff318-6cf9-44de-8fb3-9767a1082813?panel=showcase">apps</a> to validate business ideas.</li>
-<li>Served in the Korean army for 2 years. In my free time I built random stuff using my iPad as my IDE (laptops weren’t allowed).</li>
-<li>Cold emailed <a href="https://zeet.co/">Zeet</a> CEO for an internship because they were solving a problem I was facing (cloud deployment). Added some features, fixed some bugs. Flew to SF to meet the team.</li>
-<li>Cold emailed <a href="http://locofy.ai/">Locofy</a> CEO for an internship because they were solving a problem I was facing (frontend codegen from Figma). I believed the product would be re-invent the way frontends are built.</li>
-<li>Took a Leave of Absence to go all-in on the <a href="https://www.linkedin.com/posts/kim-young-jin-951a55134_devtools-developers-ai-activity-7153210998785478657-a7u1?utm_source=share&amp;utm_medium=member_desktop">biggest product launch</a> in Locofy’s history, where we automated away a huge portion of the Figma-to-frontend workflow for engineers.</li>
-<li>Came back to school, became fascinated by the brain after reading <a href="https://www.amazon.sg/Thousand-Brains-New-Theory-Intelligence/dp/1541675797/ref=tmm_pap_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=">several</a> <a href="https://www.amazon.sg/Brief-History-Intelligence-Humans-Breakthroughs/dp/0063286343/ref=sr_1_1?crid=3M57EEVQ4S0VO&amp;dib=eyJ2IjoiMSJ9.ho1q9zCIYZSSrbJT5PDEsMcb082ExbHLB8B8AMCKOEyRSv7bFVrZWb8QOCfA-nRwpK-TW8DbZAIOaEQZZtmHlLmvo56W7cDQYQ3m9hVxBj5IA-EtKnC-Jpe6TJRC14Wf_xYTaxwmJIGsOI_wjaxDvsHp1ARD4lS_mcORw-BLSIKzmYRPI_mg_R9_gsGdkpOTdNWPqdmeUGq0HtsW0SBxsDbsyT73RTR6ZB5fxLnGFZegJI8zuZ04KpG033i3HtDV-XxqcHTF495bBEi2i2Q18aObWnkOZWdt4314JoXxq5c.oCschvcEk4Er8aE-BBngvzYZhNsvoqPi6CpKEOyErj8&amp;dib_tag=se&amp;keywords=a+brief+history+of+intelligence&amp;qid=1715870274&amp;sprefix=A+Brief+%2Caps%2C400&amp;sr=8-1">books</a>.</li>
-<li>Currently trying to do some research at the intersection of AI and neuroscience by solving the <a href="https://en.wikipedia.org/wiki/Monkey_and_banana_problem">Monkey and Banana</a> problem with neuro-inspired methods.</li>
+<li><p>What is the better way to understand intelligence - engineering it from the ground up or by trying to reverse-engineer the brain?</p></li>
+<li><p>What are the limits to meta-learning? What’s stopping us from meta-learning every part of an ML algorithm?</p></li>
+<li><p>What should we vary in the environments we use to train generally capable agents? Transition dynamics? Observations? Reward functions? Intuitively, varying the reward function seems like it will produce agents that can succeed at arbitrary tasks.</p></li>
+<li><p>Is there any point in computational neuroscience if we aren’t even able to properly understand how deep NNs do what they do?</p></li>
 </ul>
+</div></div>
+</div>
+
+<p><br> <br> <br> I like to write about ideas and things I find interesting. I also share dumb technical mistakes I make so others don’t make them. <br> <br> <br></p>
+<section id="intelligence-ml-and-jax" class="level3">
+<h3 data-anchor-id="intelligence-ml-and-jax">Intelligence, ML, and Jax</h3>
+<div id="listing-intelligence" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Reading Time
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1754064000000" data-listing-file-modified-sort="1754117661227" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286" data-listing-title-sort="Leaked BatchTracer Error in Jax" data-listing-filename-sort="leaked_batch_tracer.ipynb">
+<td>
+<span class="listing-date">Aug 2, 2025</span>
+</td>
+<td>
+<a href="./ml/leaked_batch_tracer.html" class="title listing-title">Leaked BatchTracer Error in Jax</a>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1720108800000" data-listing-file-modified-sort="1754640921386" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="822" data-listing-title-sort="Neuroscience and AI" data-listing-filename-sort="neuroscience-and-ai.qmd">
+<td>
+<span class="listing-date">Jul 5, 2024</span>
+</td>
+<td>
+<a href="./ml/neuroscience-and-ai.html" class="title listing-title">Neuroscience and AI</a>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="misc" class="level3">
+<h3 data-anchor-id="misc">Misc</h3>
+<div id="listing-life" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Reading Time
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1717344000000" data-listing-file-modified-sort="1719492927914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="875" data-listing-title-sort="Notes from &quot;The Work of His Hands&quot; by Sy Garte" data-listing-filename-sort="sy-garte.qmd">
+<td>
+<span class="listing-date">Jun 3, 2024</span>
+</td>
+<td>
+<a href="./posts/sy-garte.html" class="title listing-title">Notes from “The Work of His Hands” by Sy Garte</a>
+</td>
+<td>
+<span class="listing-reading-time">5 min</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1717344000000" data-listing-file-modified-sort="1717773607619" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1411" data-listing-title-sort="Quick thoughts on 'Mere Christianity' by C.S Lewis" data-listing-filename-sort="mere-christianity.qmd">
+<td>
+<span class="listing-date">Jun 3, 2024</span>
+</td>
+<td>
+<a href="./posts/mere-christianity.html" class="title listing-title">Quick thoughts on ‘Mere Christianity’ by C.S Lewis</a>
+</td>
+<td>
+<span class="listing-reading-time">8 min</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1716048000000" data-listing-file-modified-sort="1716102385552" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="359" data-listing-title-sort="What to do about the future" data-listing-filename-sort="what-to-do-about-the-future.qmd">
+<td>
+<span class="listing-date">May 19, 2024</span>
+</td>
+<td>
+<a href="./posts/what-to-do-about-the-future.html" class="title listing-title">What to do about the future</a>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-date-sort="1716048000000" data-listing-file-modified-sort="1754641295206" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="285" data-listing-title-sort="Trying to get good at math and science" data-listing-filename-sort="trying-to-get-good-at-math-and-science.qmd">
+<td>
+<span class="listing-date">May 19, 2024</span>
+</td>
+<td>
+<a href="./posts/trying-to-get-good-at-math-and-science.html" class="title listing-title">Trying to get good at math and science</a>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-date-sort="1715875200000" data-listing-file-modified-sort="1754638855814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277" data-listing-title-sort="Ambitious but at peace" data-listing-filename-sort="ambitious-but-at-peace.qmd">
+<td>
+<span class="listing-date">May 17, 2024</span>
+</td>
+<td>
+<a href="./posts/ambitious-but-at-peace.html" class="title listing-title">Ambitious but at peace</a>
+</td>
+<td>
+<span class="listing-reading-time">2 min</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -179,13 +415,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

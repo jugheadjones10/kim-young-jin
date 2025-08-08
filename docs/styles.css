@@ -1,1 +1,30 @@
-/* css styles */
+body {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+}
+
+.quarto-listing-container-table table thead {
+  display: none;
+}
+
+.quarto-listing-container-table table {
+  border-top: none;
+  border-bottom: none;
+  table-layout: fixed; /* Equal column width behavior */
+  width: 100%;
+}
+
+.quarto-listing-container-table table td,
+.quarto-listing-container-table table th {
+  border-bottom: none;
+  border-top: none;
+}
+
+.quarto-listing-container-table table td:last-child {
+  text-align: right;
+}
+
+.quarto-listing-container-table table td:nth-child(2),
+.quarto-listing-container-table table th:nth-child(2) {
+  width: 50%; /* adjust percentage as needed */
+}

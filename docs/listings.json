@@ -2,13 +2,11 @@
   {
     "listing": "/writing.html",
     "items": [
-      "/posts/gym.html",
-      "/posts/neuro-ai-research.html",
       "/posts/sy-garte.html",
       "/posts/mere-christianity.html",
       "/posts/what-to-do-about-the-future.html",
       "/posts/trying-to-get-good-at-math-and-science.html",
-      "/posts/ambitious-and-content.html"
+      "/posts/ambitious-but-at-peace.html"
     ]
   },
   {
@@ -16,8 +14,19 @@
     "items": [
       "/learning/nielson-deep-learning/chapter-5.html",
       "/learning/nielson-deep-learning/chapter-3.html",
-      "/learning/nielson-deep-learning/mnist.html",
-      "/learning/exploding-gradients.html"
+      "/learning/nielson-deep-learning/mnist.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/ml/leaked_batch_tracer.html",
+      "/ml/neuroscience-and-ai.html",
+      "/posts/sy-garte.html",
+      "/posts/mere-christianity.html",
+      "/posts/what-to-do-about-the-future.html",
+      "/posts/trying-to-get-good-at-math-and-science.html",
+      "/posts/ambitious-but-at-peace.html"
     ]
   }
 ]

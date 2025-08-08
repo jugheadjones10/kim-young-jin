@@ -11,3 +11,5 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+
+Minimally edited stream-of-consciousness writing on whatever I happen to be curious about.

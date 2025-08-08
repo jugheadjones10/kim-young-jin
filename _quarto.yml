@@ -7,9 +7,8 @@ website:
   google-analytics: "G-PJQ5ZH4KTP"
   navbar:
     left:
-      - writing.qmd
-      - learning.qmd
-      - about.qmd
+      - text: CV
+        href: https://drive.google.com/file/d/1iKxuw4TnR15k_sLqi5q4o5845Gvz83Ft/view?usp=sharing
     right:
       - icon: github
         href: https://github.com/jugheadjones10
@@ -17,5 +16,5 @@ website:
         href: https://twitter.com/yjmemos
 format:
   html:
-    theme: litera
+    theme: united
     css: styles.css

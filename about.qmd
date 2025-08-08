@@ -2,6 +2,7 @@
 title: "About"
 image: profile.jpg
 about:
+  id: about
   template: solana
   links:
     - icon: twitter

@@ -109,5 +109,29 @@
   },
   "drafts/how-did-intelligence-evolve.qmd": {
     "how-did-intelligence-evolve.html": "b04e1672"
+  },
+  "drafts/gym.qmd": {
+    "gym.html": "a3a8b4f3"
+  },
+  "posts/leaked-batch-tracer/leaked_batch_tracer.ipynb": {
+    "leaked_batch_tracer.html": "d9ceabb9"
+  },
+  "ml/leaked-batch-tracer/leaked_batch_tracer.ipynb": {
+    "leaked_batch_tracer.html": "27963f6f"
+  },
+  "ml/leaked-batch-tracer/ambitious-and-content.qmd": {
+    "ambitious-and-content.html": "d2803889"
+  },
+  "ml/neuro-ai-research.qmd": {
+    "neuro-ai-research.html": "5ea59868"
+  },
+  "ml/neuroscience-and-ai.qmd": {
+    "neuroscience-and-ai.html": "b324ddd0"
+  },
+  "posts/ambitious-but-at-peace.qmd": {
+    "ambitious-but-at-peace.html": "7ba4fd65"
+  },
+  "ml/leaked_batch_tracer.ipynb": {
+    "leaked_batch_tracer.html": "ed080f56"
   }
 }

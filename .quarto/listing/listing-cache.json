@@ -5,6 +5,11 @@
     ],
     "learning.qmd": [
       "learning"
+    ],
+    "index.qmd": [
+      "posts",
+      "posts/post-links.yml",
+      "ml"
     ]
   }
 }
