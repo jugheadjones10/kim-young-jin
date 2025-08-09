@@ -16,5 +16,7 @@ website:
         href: https://twitter.com/yjmemos
 format:
   html:
-    theme: united
+    theme:
+      - united
+      - theme.scss
     css: styles.css
